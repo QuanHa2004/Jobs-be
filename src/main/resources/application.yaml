@@ -3,7 +3,9 @@ spring:
     name: API
 
 rapidapi:
-  key: 518e0eacb1msh56a3c4f4676e503p1abb94jsncdd7175890c9
+  key: ${RAPIDAPI_KEY}
   host: jsearch.p.rapidapi.com
   base-url: https://jsearch.p.rapidapi.com
 
+server:
+  port: ${PORT:8080}
