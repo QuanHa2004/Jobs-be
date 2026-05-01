@@ -1,11 +1,16 @@
 spring:
   application:
     name: API
+  profiles:
+    active: local
 
 rapidapi:
   key: ${RAPIDAPI_KEY}
   host: jsearch.p.rapidapi.com
   base-url: https://jsearch.p.rapidapi.com
+
+frontend:
+  url: ${FRONTEND_URL}
 
 server:
   port: ${PORT:8080}
